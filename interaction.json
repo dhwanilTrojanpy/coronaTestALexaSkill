@@ -1,0 +1,296 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "corona test",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "answerIntent",
+                    "slots": [],
+                    "samples": [
+                        "ready"
+                    ]
+                },
+                {
+                    "name": "ageIntent",
+                    "slots": [
+                        {
+                            "name": "age",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        " i am {age}",
+                        "{age} "
+                    ]
+                },
+                {
+                    "name": "genderIntent",
+                    "slots": [
+                        {
+                            "name": "gender",
+                            "type": "gender"
+                        }
+                    ],
+                    "samples": [
+                        "i am {gender}",
+                        "{gender}"
+                    ]
+                },
+                {
+                    "name": "diseaseIntent",
+                    "slots": [
+                        {
+                            "name": "disease",
+                            "type": "disease"
+                        }
+                    ],
+                    "samples": [
+                        "{disease}"
+                    ]
+                },
+                {
+                    "name": "bodyTempIntent",
+                    "slots": [
+                        {
+                            "name": "fever",
+                            "type": "fever"
+                        }
+                    ],
+                    "samples": [
+                        "{fever}"
+                    ]
+                },
+                {
+                    "name": "severeDiseaseIntent",
+                    "slots": [
+                        {
+                            "name": "severe",
+                            "type": "severeDisease"
+                        }
+                    ],
+                    "samples": [
+                        "{severe}"
+                    ]
+                },
+                {
+                    "name": "travelIntent",
+                    "slots": [
+                        {
+                            "name": "travel",
+                            "type": "travel"
+                        }
+                    ],
+                    "samples": [
+                        "{travel}"
+                    ]
+                },
+                {
+                    "name": "pastIntent",
+                    "slots": [
+                        {
+                            "name": "past",
+                            "type": "past"
+                        }
+                    ],
+                    "samples": [
+                        "{past}"
+                    ]
+                },
+                {
+                    "name": "statusIntent",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "status"
+                        }
+                    ],
+                    "samples": [
+                        "{status}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "gender",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "transgender"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "female"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "male"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "disease",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "alright"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "body weakness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snezzing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coughing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "severeDisease",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "none"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pressure in chest"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "difficulty in breathing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "severe coughing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "past",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "nothing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lung disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kidney disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "heart disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blood pressure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diabetes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "fever",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "normal body tempreture"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "high fever"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "travel",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "i did not"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "i did"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "getting wrost"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stable"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "improved"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
